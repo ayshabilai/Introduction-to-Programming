@@ -1,0 +1,34 @@
+year = int(input("Enter your birth year: "))
+
+remainder = (year - 2000) % 12
+zodiac_sign = f"{remainder} if 0 <= remainder < 12 else -1"
+sign = eval(zodiac_sign)
+
+if sign == 0:
+    sign = "monkey"
+elif sign == 1:
+    sign = "rooster"
+elif sign == 2:
+    sign = "dog"
+elif sign == 3:
+    sign = "pig"
+elif sign == 4:
+    sign = "rat"
+elif sign == 5:
+    sign = "ox"
+elif sign == 6:
+    sign = "tiger"
+elif sign == 7:
+    sign = "rabbit"
+elif sign == 8:
+    sign = "dragon"
+elif sign == 9:
+    sign = "snake"
+elif sign == 10:
+    sign = "horse"
+elif sign == 11:
+    sign = "sheep"
+else:
+    print("Invalid input")
+
+print("Your Zodiac sign is:", sign)
